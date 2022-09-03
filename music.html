@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('img/img3.jpg');
+            color: white;
+            font-family: 'Abril Fatface', cursive;
+        }
+        .left{
+         
+           display: inline-block;
+           position: absolute;
+           left: 10px;
+           top: 5px;
+           font-family: 'Baloo Bhai 2', cursive;
+        }
+        .left img{
+            width: 85px;
+        }
+        .mid{
+            display: block;
+            width: 700px;
+            margin: 5px auto;
+           cursor: pointer;  
+        }
+        .right{
+            display: inline-block;
+            position: absolute; 
+            right: 10px;
+            top: 5px;
+        }
+        div{
+            text-align: center;
+        }
+        .left div{
+            line-height: 29px;
+            font-size: 25px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 22px;
+        }
+        .navbar li a{
+            color: aliceblue;
+            text-decoration: none;
+            padding: 17px;
+        }
+        .navbar li a:hover{
+            color: rgb(137, 146, 153);
+            text-decoration: underline;
+            background-color: rgb(59, 35, 35);
+        }
+        .btn{
+            margin: 5px;
+            background-color: antiquewhite;
+            padding: 3px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .btn:hover{
+            color: rgb(255, 255, 255);
+            background-color:rgb(204, 172, 131) ;
+        }
+        .container{
+            border: 3px solid khaki;
+            margin: 50px auto;
+            padding: 30px;
+            width: 599px;
+            border-radius: 12px;
+        }
+        .formGroup input{
+              margin: 5px auto;     
+              text-align: center;
+              display: block;
+              border: 2px solid black;
+              border-radius: 7px;
+              width: 309px;
+              padding: 5px;
+              font-family: 'Baloo Bhai 2', cursive;
+        }
+        .container button{
+            width: 109px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/img4.png" alt="">
+            <div>Rhythm</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home </a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Pages </a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Contact Us </a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Sign Up for Joining The Rhythmic Band </h1>
+        <form action="noaction.php">
+            <div class="formGroup">
+                <input type="text" placeholder="enter your name">
+                <input type="text" placeholder="enter your Email">
+                <input type="text" placeholder="enter your Contact No.">
+                <input type="text" placeholder="enter your id">
+                <input type="text" placeholder="enter the password">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
